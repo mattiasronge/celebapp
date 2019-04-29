@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Celeb-app</title>
+
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>asset/celebrity.css">
+    <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>asset/style.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <header class="page-topbar" id="header">
+      <div class="navbar navbar-fixed"> 
+        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+          <div class="nav-wrapper">
+            <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
+              <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Explore Celebrity">
+
+
+        </nav>
+      </div>
+    </header> 
+
+     <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+
+      <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#/celebs"><i class="material-icons">settings_input_svideo</i><span class="menu-title" data-i18n="">All celebrity</span></a></li>
+  
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#/seen"><i class="material-icons">dvr</i><span class="menu-title" data-i18n="">Celebrity seen</span></a>
+        </li>
+
+        <li class="bold"><a class="waves-effect waves-cyan " href="#/addcelebs"><i class="material-icons">import_contacts</i><span class="menu-title" data-i18n="">Add</span></a>
+        </li>
+        
+      </ul>
+      <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>  
+
+    <div id="app"></div>  
+
+  </body>
+</html>
